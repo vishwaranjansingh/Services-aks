@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: best
+  labels:
+    hero: zero
+spec:
+  containers:
+  - name: best-pod
+    image: vishwaranjansingh/best
+    ports:
+      - containerPort: 80
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: Demo
+  labels:
+     hero: zero
+spec:
+  containers:
+  - name: Demp-pod
+    image: vishwaranjansingh/demo
+    ports: 
+      - containerPort: 80
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: Test
+  labels:
+    hero: zero
+spec:
+  containers:
+  - name: Test-pod
+    image: vishwaranjansingh/test
+    ports:
+      - containerPort: 80
